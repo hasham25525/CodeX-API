@@ -24,11 +24,11 @@ const commandMap = (jobID, language) => {
             };
         case 'py':
             return {
-                executeCodeCommand: 'python3',
+                executeCodeCommand: 'python',
                 executionArgs: [
                     join(process.cwd(), `codes/${jobID}.py`)
                 ],
-                compilerInfoCommand: 'python3 --version'
+                compilerInfoCommand: 'python --version'
             }
         case 'c':
             return {
