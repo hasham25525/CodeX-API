@@ -27,7 +27,7 @@ WORKDIR /app
 RUN npm install
 
 # Build the React app for production
-RUN npm run build
+# RUN npm run build
 
 # Expose port 3001 if needed for development, but for production, you typically serve the static files
 EXPOSE 3001

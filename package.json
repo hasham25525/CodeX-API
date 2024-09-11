@@ -5,8 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jaagrav Seal",
   "license": "ISC",
@@ -14,10 +13,5 @@
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "uuid": "^8.3.2"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.25.6",
-    "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.4"
   }
 }
