@@ -23,7 +23,14 @@ ENV PATH="/root/.nvm/versions/node/v${NODE_VERSION}/bin/:${PATH}"
 
 COPY . /app
 WORKDIR /app
+# Install npm dependencies
 RUN npm install
 
+# Build the React app for production
+RUN npm run build
+
+# Expose port 3001 if needed for development, but for production, you typically serve the static files
 EXPOSE 3001
+
+# Start the app (you might want to change this depending on how you serve your app)
 CMD ["npm", "start"]
